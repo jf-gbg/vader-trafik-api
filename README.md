@@ -7,6 +7,7 @@ A showcase web application for .NET developers, built to demonstrate integration
 - Fetches weather data from SMHI based on user location (city)
 - Displays current and forecasted weather in a simple, stylish UI
 - Built with ASP.NET backend and React frontend
+- Microservices project structure
 
 ## Technologies
 
@@ -16,7 +17,7 @@ A showcase web application for .NET developers, built to demonstrate integration
 
 ## Purpose
 
-This project is designed to highlight my skills as a .NET developer in Sweden, focusing on API integration, modern web development, and user experience.
+This project is designed to highlight my skills as a .NET developer in Sweden, focusing on API integration, modern web development, and user experience. 
 
 ## Getting Started
 

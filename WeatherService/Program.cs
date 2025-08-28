@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+
 // Add CORS policy for local frontend dev
 builder.Services.AddCors(options =>
 {
@@ -13,6 +14,15 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
+});
+
+// add controllers if not already present
+builder.Services.AddControllers();
+
+// Register typed SMHI HttpClient
+builder.Services.AddHttpClient<WeatherService.Services.ISmhiClient, WeatherService.Services.SmhiClient>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["Smhi:BaseUrl"] ?? "https://opendata.smhi.se/");
 });
 
 var app = builder.Build();
@@ -27,6 +37,8 @@ app.UseHttpsRedirection();
 
 // Apply CORS
 app.UseCors("LocalDevCors");
+
+app.MapControllers();
 
 var summaries = new[]
 {

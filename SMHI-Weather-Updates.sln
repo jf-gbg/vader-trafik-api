@@ -2,15 +2,32 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherService\WeatherService.csproj", "{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{CE609670-85B9-0D16-FB54-ED063D5D8A6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Debug|x86.Build.0 = Debug|Any CPU
 		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|x64.Build.0 = Release|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED42AEBF-DF3B-4E9B-AA03-03A19BDC5C3F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
